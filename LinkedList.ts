@@ -70,6 +70,20 @@ class LinkedList<T> {
         return false;
     }
 
+    dumpList() {
+        let current = this.head;
+        while (current != null) {
+          console.log(`
+          node: ${current.data}
+          -----------
+            prev: ${current.prev?.data}
+            next: ${current.next?.data}
+          `);
+          
+          current = current.next;
+        }
+      }
+
     public get(index: number) {
         if (this.isEmpty()) {
             throw new Error("LinkedList is empty!");
