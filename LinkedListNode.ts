@@ -16,3 +16,5 @@ class LinkedListNode<T> {
     }
 
 }
+
+export default LinkedListNode
